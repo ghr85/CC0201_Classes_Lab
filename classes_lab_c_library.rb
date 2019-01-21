@@ -29,4 +29,8 @@ class Library
         end
        end
 
+def add_new_book_title(new_book_hash)
+  @library_catalogue_array<<new_book_hash
+end
+
 end

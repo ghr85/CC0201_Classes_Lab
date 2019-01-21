@@ -35,7 +35,7 @@ Stick to your principles you learned last week:
 ### C Library Class
 
 * Hashes make everything difficult if just for scrollability.
-*
+* Watch out for commas while using asset equal, particularly when using hashes.
 
 ## Notes
 

@@ -95,9 +95,22 @@ class TestLibrary < MiniTest::Test
 
         def test_find_rental_info_by_title
           assert_equal({
-              student_name: "Hilda",
-              date: "18/01/87"
+            student_name: "Hilda",
+            date: "18/01/87"
             }, @library.find_rental_info_by_title("spot_goes_to_borstal"))
           end
 
+          def test_add_new_book_title
+            assert_equal(@library.find_book_by_title("spot_and_and_the_missing_snooker_balls"),
+            @library.add_new_book_title(
+              {
+              title: "spot_and_and_the_missing_snooker_balls", #absolutely a real title
+              rental_details: {
+                student_name: "",
+                date: ""
+              }
+            }
+          )
+        )
       end
+    end
