@@ -14,19 +14,20 @@ class TestTeam < MiniTest::Test
   end
 
   def test_get_team_name #getter
-    assert_equal("Gryffindor", @team.get_team_name)
+    assert_equal("Gryffindor", @team.team_name_string())
   end
 
   def test_get_team_list #getter
-    assert_equal(["Ron Weasely", "Harry Potter", "Hermione Granger"], @team.get_team_list)
+    assert_equal(["Ron Weasely", "Harry Potter", "Hermione Granger"], @team.player_name_array())
   end
 
   def test_get_coach_name #getter
-    assert_equal("Hagrid", @team.get_coach)
+    assert_equal("Hagrid", @team.coach_name_string())
   end
 
   def test_set_coach_name #setter
-    assert_equal("Snape", @team.set_coach_name("Snape"))
+    @team.set_coach_name("Snape")
+    assert_equal("Snape", @team.coach_name_string())
   end
 
 

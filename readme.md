@@ -27,6 +27,7 @@ Stick to your principles you learned last week:
 
 ### B Teams Class
 
+* Members of a different class - even in a related test file, will not have access to instance variables
 
 ### C Library Class
 
