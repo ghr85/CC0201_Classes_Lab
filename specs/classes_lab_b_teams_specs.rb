@@ -17,5 +17,8 @@ class TestTeam < MiniTest::Test
     assert_equal("Gryffindor", @team.get_team_name)
   end
 
+  def test_get_team_list
+    assert_equal(["Ron Weasely", "Harry Potter", "Hermione Granger"], @team.get_team_list)
+  end
 
 end

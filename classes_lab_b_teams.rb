@@ -15,4 +15,9 @@ class Team
 def get_team_name
   return @team_name_string
 end
+
+def get_team_list
+  return @player_name_array
+end
+
 end
