@@ -10,7 +10,7 @@ require_relative('../classes_lab_b_teams.rb') # require related source code
 
 class TestTeam < MiniTest::Test
   def setup #set up data to play with
-    @team = Team.new("Gryffindor",["Ron Weasely", "Harry Potter", "Hermione Granger"], "Hagrid") #supply dummy data
+    @team = Team.new("Gryffindor",["Ron Weasely", "Harry Potter", "Hermione Granger"], "Hagrid", 0) #supply dummy data
   end
 
   def test_get_team_name #getter
@@ -42,4 +42,20 @@ class TestTeam < MiniTest::Test
   def test_find_player__not_found
     assert_equal("Samuel L Jackson is not on the Gryffindor team.", @team.find_player("Samuel L Jackson"))
   end
+
+  def test_game_result__win
+    @team.game_result("win")
+    assert_equal(3,@team.team_points_integer())
+  end
+
+  def test_game_result__lose
+    @team.game_result("lose")
+    assert_equal(-1,@team.team_points_integer())
+  end
+
+  def test_game_result__lose
+    @team.game_result("draw")
+    assert_equal(1,@team.team_points_integer())
+  end
+
 end

@@ -6,13 +6,14 @@
 
 class Team
 
-  attr_accessor :coach_name_string, :player_name_array
+  attr_accessor :coach_name_string, :player_name_array, :team_points_integer
   attr_reader :team_name_string
 
-  def initialize(team_name_string, player_name_array, coach_name_string) # note American spelling. Ruby in built method.
+  def initialize(team_name_string, player_name_array, coach_name_string, team_points_integer) # note American spelling. Ruby in built method.
     @team_name_string = team_name_string#create instance variables which draw from local variables above
     @player_name_array = player_name_array #instance variable on left, local scoped variable on right available to whole class
     @coach_name_string = coach_name_string # this initial set up enables variables to be accessed outside function
+    @team_points_integer = team_points_integer
   end
 
   def set_coach_name(new_coach_string) #setter
@@ -31,6 +32,18 @@ class Team
     end
     return "#{query_player_string} is not on the #{team_name_string} team."
   end
+
+  def game_result(result_string)
+    case result_string
+    when "win"
+      @team_points_integer += 3
+    when "draw"
+      @team_points_integer += 1
+    when "lose"
+      @team_points_integer -= 1
+    end
+  end
+
 
 # ------these are all hashed out in favour of attribute accessor methods
 # def get_team_name #getter
