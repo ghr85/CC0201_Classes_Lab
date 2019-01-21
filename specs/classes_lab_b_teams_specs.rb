@@ -34,3 +34,12 @@ class TestTeam < MiniTest::Test
     @team.add_player("Professor McGonagle")
     assert_equal(["Ron Weasely", "Harry Potter", "Hermione Granger", "Professor McGonagle"],@team.player_name_array())
   end
+
+  def test_find_player__found
+    assert_equal("Harry Potter is on the Gryffindor team!", @team.find_player("Harry Potter"))
+  end
+
+  def test_find_player__not_found
+    assert_equal("Samuel L Jackson is not on the Gryffindor team.", @team.find_player("Samuel L Jackson"))
+  end
+end

@@ -6,8 +6,8 @@
 
 class Team
 
-attr_accessor :coach_name_string, :player_name_array
-attr_reader :team_name_string
+  attr_accessor :coach_name_string, :player_name_array
+  attr_reader :team_name_string
 
   def initialize(team_name_string, player_name_array, coach_name_string) # note American spelling. Ruby in built method.
     @team_name_string = team_name_string#create instance variables which draw from local variables above
@@ -21,6 +21,15 @@ attr_reader :team_name_string
 
   def add_player(new_player_string)
     @player_name_array << new_player_string
+  end
+
+  def find_player(query_player_string)
+    for player_element in @player_name_array
+      if query_player_string == player_element
+        return "#{query_player_string} is on the #{team_name_string} team!"
+      end
+    end
+    return "#{query_player_string} is not on the #{team_name_string} team."
   end
 
 # ------these are all hashed out in favour of attribute accessor methods
