@@ -18,6 +18,7 @@ Stick to your principles you learned last week:
 * Test first, make it fail, code it to pass, test again, refactor
 * Keep your variable names tight
 * Watch the console
+* Remember, you always want to test first and FAIL, this lets you know your passes are solid.
 
 ### A Students Class
 
@@ -34,12 +35,10 @@ Order of approach:
 * Write it down on paper first - split it up into attributes and behaviours, understand what needs built.
 * Set up directory, spec files and source code files, create Git repository and get that first commit in.
 * Get your test requirements, file requirements and headers down then draw down from MiniTest to create test class.
-* Create setup data in test file to be used - create an object of type to be tested.
+* Create setup data in test file to be used - create an @object of type to be tested.
 * Create class in source file. Create initialize method.
 * Begin creating test functions, let it fail, then code it to pass.
 * Commit once passed. Keep a record, keep it clean.
-
-
 
 
 
