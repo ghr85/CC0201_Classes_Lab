@@ -3,3 +3,7 @@
 #
 # Classes Lab Test Specifications
 # C Library
+class Library
+
+
+end
