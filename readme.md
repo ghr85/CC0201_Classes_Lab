@@ -29,6 +29,19 @@ Stick to your principles you learned last week:
 
 ## Notes
 
+Order of approach:
+
+* Write it down on paper first - split it up into attributes and behaviours, understand what needs built.
+* Set up directory, spec files and source code files, create Git repository and get that first commit in.
+* Get your test requirements, file requirements and headers down then draw down from MiniTest to create test class.
+* Create setup data in test file to be used - create an object of type to be tested.
+* Create class in source file. Create initialize method.
+* Begin creating test functions, let it fail, then code it to pass.
+* Commit once passed. Keep a record, keep it clean.
+
+
+
+
 
 ## Files
 
