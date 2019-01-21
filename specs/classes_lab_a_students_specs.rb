@@ -35,5 +35,8 @@ class TestStudent < MiniTest::Test
   def test_talk
     assert_equal("I must now master the power of silence.", @student.talk("I must now master the power of silence."))
   end
-
-end 
+  
+  def test_language
+    assert_equal("My favourite programming language is Ruby",@student.language("Ruby"))
+  end
+end

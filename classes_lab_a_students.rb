@@ -30,4 +30,7 @@ def talk(patter_string)
   return patter_string
 end
 
+def language(language_string)
+  return "My favourite programming language is #{language_string}"
+end
 end
