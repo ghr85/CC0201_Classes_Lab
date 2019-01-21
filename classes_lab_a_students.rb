@@ -26,6 +26,8 @@ def set_student_cohort(set_student_cohort_string)
   @student_cohort_string = (set_student_cohort_string)
 end
 
-
+def talk(patter_string)
+  return patter_string
+end
 
 end
