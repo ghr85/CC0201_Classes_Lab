@@ -3,3 +3,8 @@
 #
 # Classes Lab
 # B Teams
+
+class Teams
+
+
+end

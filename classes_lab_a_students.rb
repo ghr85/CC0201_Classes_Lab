@@ -4,7 +4,13 @@
 # Classes Lab
 # A Students
 
-class Students
+class Student
+ def initialize(student_name_string,student_cohort_string)
+   @student_name_string = student_name_string
+   @student_cohort_string = student_cohort_string
+ end
 
-  
+def get_student_name
+  return @student_name_string
+end
 end
