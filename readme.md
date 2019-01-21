@@ -22,6 +22,8 @@ Stick to your principles you learned last week:
 
 ### A Students Class
 
+* Take it slow, nearly a repeat of classwork for this one.
+
 
 ### B Teams Class
 

@@ -7,3 +7,15 @@
 require('minitest/autorun') #require minitest
 require('minitest/rg') # require minitest colourisation
 require_relative('../classes_lab_b_teams.rb') # require related source code
+
+class TestTeam < MiniTest::Test
+  def setup #set up data to play with
+    @team = Team.new("Gryffindor",["Ron Weasely", "Harry Potter", "Hermione Granger"], "Hagrid") #supply dummy data
+  end
+
+  def test_get_team_name
+    assert_equal("Gryffindor", @team.get_team_name)
+  end
+
+
+end
