@@ -21,4 +21,12 @@ class Library
       end
      end
 
+     def find_rental_info_by_title(book_title_string)
+       for book_element in @library_catalogue_array
+        if book_element[:title] == book_title_string
+          return book_element[:rental_details]
+        end
+        end
+       end
+
 end

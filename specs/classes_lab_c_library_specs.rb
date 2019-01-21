@@ -93,4 +93,11 @@ class TestLibrary < MiniTest::Test
           }, @library.find_book_by_title("spot_goes_to_borstal"))
         end
 
+        def test_find_rental_info_by_title
+          assert_equal({
+              student_name: "Hilda",
+              date: "18/01/87"
+            }, @library.find_rental_info_by_title("spot_goes_to_borstal"))
+          end
+
       end
