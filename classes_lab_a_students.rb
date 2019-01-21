@@ -22,6 +22,9 @@ def set_student_name(set_student_name_string)
   @student_name_string = (set_student_name_string)
 end
 
+def set_student_cohort(set_student_cohort_string)
+  @student_cohort_string = (set_student_cohort_string)
+end
 
 
 
