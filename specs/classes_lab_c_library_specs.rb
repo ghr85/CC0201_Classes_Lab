@@ -47,7 +47,8 @@ class TestLibrary < MiniTest::Test
 
   end
 
-  def test_get_catalogue
+
+  def test_get_catalogue #run a comparison between catalogue data and get method
     assert_equal(
       [
         {
@@ -83,7 +84,8 @@ class TestLibrary < MiniTest::Test
 
       end
 
-      def test_find_book_by_title
+
+      def test_find_book_by_title 
         assert_equal({
           title: "spot_goes_to_borstal",
           rental_details: {
@@ -93,6 +95,7 @@ class TestLibrary < MiniTest::Test
           }, @library.find_book_by_title("spot_goes_to_borstal"))
         end
 
+
         def test_find_rental_info_by_title
           assert_equal({
             student_name: "Hilda",
@@ -100,17 +103,34 @@ class TestLibrary < MiniTest::Test
             }, @library.find_rental_info_by_title("spot_goes_to_borstal"))
           end
 
+
           def test_add_new_book_title
             assert_equal(@library.find_book_by_title("spot_and_and_the_missing_snooker_balls"),
             @library.add_new_book_title(
               {
-              title: "spot_and_and_the_missing_snooker_balls", #absolutely a real title
-              rental_details: {
-                student_name: "",
-                date: ""
+                title: "spot_and_and_the_missing_snooker_balls", #absolutely a real title
+                rental_details: {
+                  student_name: "",
+                  date: ""
+                }
               }
+            )
+          )
+        end
+
+
+        def test_modify_rental_details
+          @library.modify_rental_details("lord_of_the_flies",
+            {
+              student_name: "The Daddy",
+              date: "06/06/1982"
             }
           )
-        )
-      end
-    end
+          assert_equal({
+            student_name: "The Daddy",
+            date: "06/06/1982"
+            },@library.find_rental_info_by_title("lord_of_the_flies"))
+          end
+
+
+        end

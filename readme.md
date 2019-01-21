@@ -36,6 +36,8 @@ Stick to your principles you learned last week:
 
 * Hashes make everything difficult if just for scrollability.
 * Watch out for commas while using asset equal, particularly when using hashes.
+* Take breaks or the screen will turn your eyes to fudge.
+
 
 ## Notes
 

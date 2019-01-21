@@ -21,11 +21,11 @@ class Team
   end
 
   def add_player(new_player_string)
-    @player_name_array << new_player_string
+    @player_name_array << new_player_string #append to array
   end
 
   def find_player(query_player_string)
-    for player_element in @player_name_array
+    for player_element in @player_name_array #iterate through array and modify if match
       if query_player_string == player_element
         return "#{query_player_string} is on the #{team_name_string} team!"
       end
