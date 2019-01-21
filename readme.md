@@ -27,9 +27,15 @@ Stick to your principles you learned last week:
 
 ### B Teams Class
 
-* Members of a different class - even in a related test file, will not have access to instance variables
+* Members of a different class - even in a related test file, will not have access to instance variables.
+* Inspect? Perhaps needs a code block - could not get a true or false return on an array? Regardless, iterated.
+* Ctrl Shift R, keep formatting so you can see where functions close
+
 
 ### C Library Class
+
+* Hashes make everything difficult if just for scrollability.
+*
 
 ## Notes
 
