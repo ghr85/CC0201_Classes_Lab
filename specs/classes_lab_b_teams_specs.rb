@@ -30,5 +30,7 @@ class TestTeam < MiniTest::Test
     assert_equal("Snape", @team.coach_name_string())
   end
 
-
-end
+  def test_add_player
+    @team.add_player("Professor McGonagle")
+    assert_equal(["Ron Weasely", "Harry Potter", "Hermione Granger", "Professor McGonagle"],@team.player_name_array())
+  end

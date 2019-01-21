@@ -19,6 +19,10 @@ attr_reader :team_name_string
     @coach_name_string = new_coach_string
   end
 
+  def add_player(new_player_string)
+    @player_name_array << new_player_string
+  end
+
 # ------these are all hashed out in favour of attribute accessor methods
 # def get_team_name #getter
 #   return @team_name_string
