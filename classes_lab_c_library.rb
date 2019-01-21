@@ -5,5 +5,11 @@
 # C Library
 class Library
 
+  def initialize(library_catalogue_array)
+    @library_catalogue_array = library_catalogue_array
+  end
 
-end
+  def get_catalogue
+    return @library_catalogue_array
+  end
+end 
