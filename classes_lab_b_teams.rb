@@ -24,4 +24,8 @@ def get_coach
   return @coach_name_string
 end
 
+def set_coach_name(new_coach_string)
+  @coach_name_string = new_coach_string
+end
+
 end
