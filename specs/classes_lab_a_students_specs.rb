@@ -21,4 +21,10 @@ class TestStudent < MiniTest::Test
   def test_get_student_cohort
     assert_equal("E28", @student.get_student_cohort)
   end
+
+  def test_set_student_name
+    @student.set_student_name("Holly Fraser")
+    assert_equal("Holly Fraser", @student.get_student_name)
+  end
+
 end

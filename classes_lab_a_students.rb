@@ -18,4 +18,11 @@ def get_student_cohort
   return @student_cohort_string
 end
 
+def set_student_name(set_student_name_string)
+  @student_name_string = (set_student_name_string)
+end
+
+
+
+
 end
