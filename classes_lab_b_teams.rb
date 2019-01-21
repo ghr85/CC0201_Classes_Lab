@@ -20,4 +20,8 @@ def get_team_list
   return @player_name_array
 end
 
+def get_coach
+  return @coach_name_string
+end
+
 end

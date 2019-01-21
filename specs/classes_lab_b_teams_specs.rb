@@ -21,4 +21,8 @@ class TestTeam < MiniTest::Test
     assert_equal(["Ron Weasely", "Harry Potter", "Hermione Granger"], @team.get_team_list)
   end
 
+  def test_get_coach_name
+    assert_equal("Hagrid", @team.get_coach)
+  end
+
 end
